@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wnrs/static/css/main.7cee8105.css",
+    "main.js": "/wnrs/static/js/main.9cf11003.js",
+    "static/js/496.1cbef0a5.chunk.js": "/wnrs/static/js/496.1cbef0a5.chunk.js",
+    "index.html": "/wnrs/index.html",
+    "main.7cee8105.css.map": "/wnrs/static/css/main.7cee8105.css.map",
+    "main.9cf11003.js.map": "/wnrs/static/js/main.9cf11003.js.map",
+    "496.1cbef0a5.chunk.js.map": "/wnrs/static/js/496.1cbef0a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cee8105.css",
+    "static/js/main.9cf11003.js"
+  ]
+}
