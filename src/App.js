@@ -179,9 +179,9 @@ function App() {
   ];
 
   let levels = {
-    levelOne: shuffle(levelOne),
-    levelTwo: shuffle(levelTwo),
-    levelThree: shuffle(levelThree),
+    niveauUn: shuffle(levelOne),
+    niveauDeux: shuffle(levelTwo),
+    niveauTrois: shuffle(levelThree),
   };
 
   const [gameState] = React.useState(levels);
