@@ -202,7 +202,7 @@ function App() {
   function handleChangeLevel(newLevel) {
     setLevel(newLevel);
     if (gameState[newLevel].length === 1) {
-      const finalMessage = "You have finished this level!";
+      const finalMessage = "Vous avez terminé ce niveau!";
       setCurrCard(finalMessage);
     } else {
       setCurrCard(gameState[newLevel][0]);
@@ -210,7 +210,7 @@ function App() {
   }
 
   function handleNextCard() {
-    const finalMessage = "You have finished this level!";
+    const finalMessage = "Vous avez terminé ce niveau!";
     if (gameState[currLevel].length === 1) {
       if (currCard === finalMessage) {
         return;
@@ -230,30 +230,29 @@ function App() {
   return (
     <div className="App">
       <div className="credits">
-        <div className="credits-title">how & who</div>{" "}
+        <div className="credits-title">Qui & quoi</div>{" "}
         <div className="cont">
-          <b>How to play:</b> <br />
-          Progress from level to level. Become more than strangers, one card at
-          a time.
-          <p>Refresh to reset card decks.</p>{" "}
+          <b>Comment jouer:</b> <br />
+          Progresser dans les niveaux, devenez plus que des inconnus, une carte à la fois.
+          <p>Rafraîchir pour mélanger les cartes.</p>{" "}
           <p>
-            Made by <a href="https://github.com/munjoonteo">@munjoonteo</a> and{" "}
-            <a href="https://github.com/ilyues">@ilyues</a>, inspired by the
-            need to virtually play{" "}
-            <a href="https://www.werenotreallystrangers.com/">WNRS</a>.
+            Créé par <a href="https://github.com/munjoonteo">@munjoonteo</a> et{" "}
+            <a href="https://github.com/ilyues">@ilyues</a>, inspiré par le beosin de jouer à {" "}
+            <a href="https://www.werenotreallystrangers.com/">We're Not Really Strangers</a> en ligne.
           </p>
+          <p>Traduit en français par <a href="https://github.com/JeremieANACHE">@JeremieANACHE</a></p>
         </div>
       </div>
       <div className="levels">{buttons}</div>
       <div className="question">
-        <div className="title">we're not really strangers</div>
+        <div className="title">On n'est pas vraiment des inconnus</div>
         <Card styleName="big-card" question={currCard} />
         <button className="next-card-button" onClick={() => handleNextCard()}>
-          next card
+          Carte suivante
         </button>
       </div>
       <div className="history">
-        <div className="history-title">previous cards</div>
+        <div className="history-title">Cartes précédentes</div>
         <div className="card-container">
           <div className="card-container-scroll">
             {cardHistory.map((qn) => (
